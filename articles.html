@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d3c68a0709.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>	
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="staff.html">About</a>
+      <a href="museum.html">Museum Resources</a>
+      <a href="teacher.html">Teacher Resources</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html" style="float: right;">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+<div class="header">Museum Education Hub</div>
+
+<div class="row">
+<div class="col-lg-3">
+  <div style="margin-left: 10px; margin-top: 10px;"><form action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button class="button button1"><i class="fa fa-search"></i></button>
+  </form></div>
+  <p></p>
+  <div class="keywords"><h3>Keywords:</h3>
+  <a href="#">Museums <br>
+Libraries<br>
+Books<br>
+Education <br>
+ADA <br>
+Accessibility <br>
+Disabilities</a>
+</div>
+</div>
+
+<div class="col-lg-9">
+  <div class="artcont"><h3><a href="#">Banned Books: Museums and Libraries Respond</a></h3>
+    <h4>Museum Education Round Table, November 2020</h4>
+  In October, author Kelly Yang received notification that a parent had filed 
+              a complaint about the use of her book, Front Desk, in a school’s curriculum. 
+              The parent deemed the book propaganda, and believed the school was teaching racism by 
+              including the book in an anti-racism curriculum. Front Desk, an award-winning middle-grade novel, 
+              follows 10-year-old Mia Tang and her parents... <a href="#">Museums | Libraries | Museum | Library | Books | Banned</a>
+
+
+  <p></p>
+  <h3><a href="#">Working Together to Advance Accessibility</a></h3>
+  <h4>Museum Education Round Table, July 2020</h4>
+  Over the past year, MER and Taylor & Francis, the publisher of the Journal of Museum Education (JME) and a 
+            number of other journals from the heritage sector, have worked to make our organizations, products, and services more accessible for 
+            people with disabilities. Our shared product, the JME, has served as a catalyst for us to collaborate on these efforts.
+            <a href="#">Accessibility | ADA | Museum | Museums | Disabilities</a>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</body>

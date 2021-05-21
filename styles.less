@@ -1,0 +1,363 @@
+/*less variables*/
+@padding: 10px;
+@staffpadding: 5px;
+@white: #ffffff;
+@black: #000000;
+@brown: #7a4f1d;
+@rose: #E2B3A3;
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+
+  h1 {font-size: 55px;
+  margin-left: 40px;
+  text-decoration: underline;}
+
+  h3 {text-decoration: underline;
+  font-style: italic;
+font-size: 30px;}
+
+h4 {font-weight: bold;}
+
+  @media (min-width: 992px){
+      h1 {font-size: 35px;}
+  }
+
+  /*mixin*/
+  .borders {
+    border: 1px solid @brown;
+    border-radius: 5px;
+  }
+
+/*nested*/
+  .header {
+      width: 100%;
+      height: 325px;
+      text-align: center; 
+      background: url("https://i.postimg.cc/TPFpG4v4/gallery1.jpg"); 
+      background-size: cover; 
+      color: white;
+      font-size: 70px;
+      padding: 90px 0;
+
+      img {
+        width: 100%;
+        height: 325px;
+        object-fit: cover;
+    }
+  }
+  
+  .resources {
+      width: 95%;
+      height: 200px;
+      .borders();
+      margin-left: 20px;
+      margin-top: 30px;
+      padding: @padding;
+      background: url('https://i.postimg.cc/y6Zc2vTr/statues.jpg');
+      font-size: 20px;
+      color: #000;
+    }
+  
+  
+  .minires {
+    background: rgba(247, 250, 247, .55);
+    height: 150px;
+    border: solid 1px #aeaeae; 
+    border-radius: 10px; 
+    margin-left: -10px;
+    padding: 5px;
+
+  }
+
+  .articles {
+    width: 98%;
+    .borders();
+    padding: @padding;
+    margin-top: 10px;
+    height: 500px; 
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .icon img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+  }
+
+  .container {
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .staffimg  {
+    position: relative;
+    width: 95%;
+    .borders();
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: @padding;
+    float: left;
+
+    img {
+      width: 440px;
+      height: 440px;
+      object-fit: cover;
+    }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #aeaeae;
+}
+
+.staffimg:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #000;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  position: relative;
+  width: 440px;
+  height: 440px;
+  position: relative;
+    .borders();
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: @padding;
+    float: left;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  margin: auto;
+  width: 50%;
+  display: none;
+  padding: 6px 12px;
+  text-align: justify;
+}
+
+.keywords {
+  height: 300px;
+  border: 1px solid @brown;
+  border-radius: 5px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.artcont {
+  width: 90%;
+  padding: 15px;
+  text-align: justify;
+}
+
+.button1 {
+
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.button1:hover {
+  background-color: @rose;
+}
+
+/*contact form styles*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:@brown;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: @rose;
+}
+
+.container {
+  margin: auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*login form and create account styles*/
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: @brown;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #000;
+  opacity: .5;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+/*navigation bar styles */
+
+  /*nested*/
+  .topnav {
+    overflow: hidden;
+    background-color: @white;
+
+    a {
+        float: left;
+        display: block;
+        color: @black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+    a:hover {
+        background-color:@rose;
+        color: @black;
+      }
+      
+    a.active {
+        background-color: @brown;
+        color: @white;
+      }
+      
+    .icon {
+        display: none;
+      }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+

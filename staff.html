@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d3c68a0709.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>	
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="staff.html">About</a>
+      <a href="museum.html">Museum Resources</a>
+      <a href="teacher.html">Teacher Resources</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html" style="float: right;">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+<div class="header">Museum Education Hub</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div style="text-align: center;">
+        <h1>About Us</h1>
+        <div class="container">Museum Education Hub is a joint effort between our initial staff of three: a web developer with a museum background, a museum educator
+        at a county historical society, and a 4th grade history teacher. The idea behind this was to make sharing resources between these groups
+        easier, to make networking easier. </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+        <div class="col-lg-4">
+        <div class="staffimg">
+        <img src="https://i.postimg.cc/bNSCCxGz/1.jpg">
+        <div class="overlay">
+        <div class="text">
+            <p><b>Name:</b> First Last</p>
+            <p><b>Title:</b> Web Developer</p>
+            <p><b>Information:</b> A former museum educator who worked in a variety of small house museums before transitioning into a web
+            development career. The goal behind their career change was to begin to bridge the gap between historic sites and technology. </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="staffimg">
+            <img src="https://i.postimg.cc/dV8WvJmp/2.jpg">
+            <div class="overlay">
+            <div class="text">
+                <p><b>Name:</b> First Last</p>
+                <p><b>Title:</b> Museum Educator</p>
+                <p><b>Information:</b> Currently employed as the museum education manager at clarke county historical society, they have an
+                intense interest in building relationships with the surrounding area schools and communities to help educate. </p>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="staffimg">
+                <img src="https://i.postimg.cc/CxyvWRDb/3.jpg">
+                <div class="overlay">
+                <div class="text">
+                    <p><b>Name:</b> First Last</p>
+                    <p><b>Title:</b> 4th Grade Teacher</p>
+                    <p><b>Information:</b> As a 4th grade teacher, Virginia History is a focus for their students so this project was intended
+                    to create an easier resource for teachers to use in furthering the education of their students. </p>
+                </div>
+                </div>
+                </div>
+                </div>
+</div>
+
+
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</body>

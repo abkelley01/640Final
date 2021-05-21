@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d3c68a0709.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <!-- Reference jQuery Library -->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+     
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="staff.html">About</a>
+        <a href="museum.html">Museum Resources</a>
+        <a href="teacher.html">Teacher Resources</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html" style="float: right;">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+<div class="header">
+  Museum Education Hub
+</div>
+
+<div class="row">
+    <div class="col-lg-9">
+      <a href="museum.html"><div class="resources"><div class="row">
+            <div class="col-md-7"><h1>Museum Resources</h1></div>
+            <div class="col-md-5"><div class="minires">Our museum resources are pulled from a variety of museums. 
+              They include information on school tours, traveling trunks, and volunteer training.</div></div>
+            </div>
+        </div></a>
+
+        <a href="teacher.html"><div class="resources"><div class="row">
+            <div class="col-md-7"><h1>Teacher Resources</h1></div>
+            <div class="col-md-5"><div class="minires">Curated by our k-12 education staff member, 
+              the teacher resources include history hand outs for the classroom and teacher resource packets
+            to help teach various history topics in relation to the museums.</div>
+            </div>
+            </div>
+        </div></a>
+    
+    </div>
+
+
+    <div class="col-lg-3">
+      <div class="articles">
+
+        <h1>Recent Articles</h1>
+        <div class="row">
+            <div class="col-sm-3"><img src="https://i.postimg.cc/y6Mpf297/ceramics.jpg" alt="brown and gray ceramic tools" style="width: 50px; height: 50px; object-fit: cover;"></div>
+            <div class="col-sm-8"><h4><a href="#">Banned Books: Museums and Libraries Respond</a></h4></div>
+            </div>
+            <div class="row">
+            <div class="col-sm-12">In October, author Kelly Yang received notification that a parent had filed 
+              a complaint about the use of her book, Front Desk, in a school’s curriculum. 
+              The parent deemed the book propaganda, and believed the school was teaching racism by 
+              including the book in an anti-racism curriculum. Front Desk, an award-winning middle-grade novel, 
+              follows 10-year-old Mia Tang and her parents …</div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3"><img src="https://i.postimg.cc/y6Mpf297/ceramics.jpg" alt="brown and gray ceramic tools" style="width: 50px; height: 50px; object-fit: cover;"></div>
+          <div class="col-sm-8"><h4><a href="#">Working Together to Advance Accessibility</a></h4></div>
+          </div>
+          <div class="row">
+          <div class="col-sm-12">Over the past year, MER and Taylor & Francis, the publisher of the Journal of Museum Education (JME) and a 
+            number of other journals from the heritage sector, have worked to make our organizations, products, and services more accessible for 
+            people with disabilities. Our shared product, the JME, has served as a catalyst for us to collaborate on these efforts.</div>
+      </div>
+
+      
+      </div>
+    
+    </div>
+</div>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</body>

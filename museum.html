@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d3c68a0709.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>	
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="staff.html">About</a>
+      <a href="museum.html">Museum Resources</a>
+      <a href="teacher.html">Teacher Resources</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html" style="float: right;">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+<div class="header">Museum Education Hub</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div style="text-align: center;">
+        <h1>Museum Resources</h1>
+        <div class="container">Our museum resources have been compiled by our staff team with peer reviews from professionals not directly
+          involved in the creation of this website. Our topics cover school tours and how best to book them, traveling trunks and how to 
+          receive them, and volunteer training resources for museum staff. If you would like to submit your own resource for review to be 
+          added to our list, please <a href="submit.html">submit your resource here.</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openResource(event, 'schooltours')" id="defaultOpen">
+    <img src="https://i.postimg.cc/W4NkcS5Q/school.png">
+    </button>
+  <button class="tablinks" onclick="openResource(event, 'traveltrunks')"><img src="https://i.postimg.cc/mDf2GyNQ/travel.png"></button>
+  <button class="tablinks" onclick="openResource(event, 'volunteers')"><img src="https://i.postimg.cc/MTXd01jj/volunteer.png"></button>
+</div>
+
+<!-- Tab content -->
+<div id="schooltours" class="tabcontent">
+  <h1 style="text-align:center;">School Tours</h1>
+  <p>All information on school tours on our site is located below. This includes current offerings at museums and contacts for booking.  </p>
+  <p><h3>Carlyle House Historic Park</h3><br> <h4>History in a Haversack (K-4):</h4> On this tour of discovery, students will compare 
+    and contrast their lives with those of colonial children using primary sources and material culture in a hands-on and interactive setting. 
+    Each student will be issued a haversack containing objects that will be used to illustrate the story of the Carlyle family, their slaves, 
+    and servants. (SOL: K.2, 1.1, 3.6, VS.1/US.1, VS.4)</p>
+</div>
+
+<div id="traveltrunks" class="tabcontent">
+  <h1 style="text-align:center;">Traveling Trunks</h1>
+  <p>All information on traveling trunks on our site is located below. This includes current offerings from museums and contacts for ordering.  </p>
+  <p><h3>Carlyle House Historic Park</h3><br> <h4>History in a Haversack (K-4):</h4> Using the objects compiled in this trunk, students will compare 
+    and contrast their lives with those of colonial children using primary sources and material culture in a hands-on and interactive setting. 
+    Each student will be issued a haversack containing objects that will be used to illustrate the story of the Carlyle family, their slaves, 
+    and servants. (SOL: K.2, 1.1, 3.6, VS.1/US.1, VS.4)</p>
+</div>
+
+<div id="volunteers" class="tabcontent">
+  <h1 style="text-align:center;">Volunteer Training</h1>
+  <p>All information on volunteer training on our site is located below. These trainings include a variety of resources from articles to quizes.  </p>
+  <p><h3>Volunteer Articles</h3><br> These articles have been pulled from a variety of resources to assist with learning how to train as well
+  as the training of volunteers themselves. </p>
+  <p><h3>Handouts</h3><br> These resources are a variety of printable information regarding topics volunteers might encounter while giving tours
+  of the site. There is a wide range of information in these handouts, ranging from time period titles, various furniture styles, and how to 
+  handle particularly difficult topics while giving tours.</p>
+</div>
+
+
+  
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+
+
+<script>
+  function openResource(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+  </script>
+
+</body>

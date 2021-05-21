@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d3c68a0709.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>	
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="staff.html">About</a>
+      <a href="museum.html">Museum Resources</a>
+      <a href="teacher.html">Teacher Resources</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html" style="float: right;">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+<div class="header">Museum Education Hub</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div style="text-align: center;">
+        <h1>Teacher Resources</h1>
+        <div class="container">Our teacher resources have been compiled by our staff team with peer reviews from professionals not directly
+          involved in the creation of this website. Our topics cover history handouts to use within the classroom and teacher resource packets
+          which have been compiled by various museums on topics pertaining to their historic site. If you would like to submit your own 
+          resource for review to be added to our list, please <a href="submit.html">submit your resource here.</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openResource(event, 'handouts')" id="defaultOpen">
+    <img src="https://i.postimg.cc/pLSQjCjN/handouts.png">
+    </button>
+  <button class="tablinks" onclick="openResource(event, 'TRPs')"><img src="https://i.postimg.cc/SxR7j3J7/trp.png"></button>
+  
+</div>
+
+<!-- Tab content --><div style="align-content: center;">
+<div id="handouts" class="tabcontent">
+  <h1 style="text-align:center;">History Handouts</h1>
+  <p><h3>Handouts</h3><br> These resources are a variety of printable information for teacher to utilize in their classroom. There are activity
+  worksheets, information sheets, and games to play in the classroom.</p>
+</div>
+
+<div id="TRPs" class="tabcontent">
+  <h1 style="text-align:center;">Teacher Resource Packets</h1>
+  <p>All information on teacher resource packets on our site is located below. These PDFs are downloadable and contain content specific to each museum. </p>
+  <p><h3>Carlyle House Historic Park</h3><br> <h4>History in a Haversack (K-4):</h4> The content in this packet contains several small articles, 
+    a few advertisements from the Carlyle businesses, and questions to help lead discussion on the time period and the various things that could be
+    found within a haversack. (SOL: K.2, 1.1, 3.6, VS.1/US.1, VS.4)</p>
+</div>
+
+</div>
+
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+<script>
+  function openResource(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+  </script>
+</body>
